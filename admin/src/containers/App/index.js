@@ -13,7 +13,6 @@ import pluginId from '../../pluginId';
 // Containers
 import ExportPage from '../ExportPage';
 import ImportPage from '../ImportPage';
-import UtilPage from '../UtilPage';
 
 const App = () => {
   return (
@@ -23,8 +22,6 @@ const App = () => {
           <Route path={`/plugins/${pluginId}/export`} component={ExportPage}
                  exact/>
           <Route path={`/plugins/${pluginId}/import`} component={ImportPage}
-                 exact/>
-          <Route path={`/plugins/${pluginId}/utilities`} component={UtilPage}
                  exact/>
           <Redirect to={`/plugins/${pluginId}/export`}/>
         </Switch>

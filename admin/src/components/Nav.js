@@ -14,10 +14,6 @@ const Nav = () => {
       {
         name: "Import",
         to: getUrl(pluginId, "import")
-      },
-      {
-        name: "Utilities",
-        to: getUrl(pluginId, "utilities")
       }
     ]}
     style={{marginTop: "2.4rem"}}
